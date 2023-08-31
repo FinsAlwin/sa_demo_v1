@@ -55,7 +55,7 @@ export default function Home() {
         <Box p={2} cursor="pointer" onClick={() => handleClickMulti()}>
           <Image
             boxShadow="md"
-            src="/image/kart.jpg"
+            src="/image/multi.png"
             width={149}
             height={149}
             style={{ borderRadius: "20%" }}
