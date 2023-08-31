@@ -21,16 +21,38 @@ export default function Home() {
     router.push(`/game-container`);
   };
 
+  const handleClickMulti = (url) => {
+    router.push(`/multi-player-game-container`);
+  };
+
   return (
     <Admin>
       <Box position="relative" padding="10">
         <Divider />
         <AbsoluteCenter px="4" color="gray.700">
-          Games
+          Single Player Games
         </AbsoluteCenter>
       </Box>
       <HStack spacing="24px">
         <Box p={2} cursor="pointer" onClick={() => handleClick()}>
+          <Image
+            boxShadow="md"
+            src="/image/kart.jpg"
+            width={149}
+            height={149}
+            style={{ borderRadius: "20%" }}
+            alt="profile pic"
+          />
+        </Box>
+      </HStack>
+      <Box position="relative" padding="10">
+        <Divider />
+        <AbsoluteCenter px="4" color="gray.700">
+          Multi-Player Games
+        </AbsoluteCenter>
+      </Box>
+      <HStack spacing="24px">
+        <Box p={2} cursor="pointer" onClick={() => handleClickMulti()}>
           <Image
             boxShadow="md"
             src="/image/kart.jpg"
