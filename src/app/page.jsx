@@ -85,7 +85,7 @@ export default function Home() {
         <Box p={2} cursor="pointer" onClick={() => handleClickMulti()}>
           <Image
             boxShadow="md"
-            src="/image/multi.png"
+            src="/image/multiplayervoice.jpeg"
             width={149}
             height={149}
             style={{ borderRadius: "20%" }}

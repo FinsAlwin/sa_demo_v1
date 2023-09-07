@@ -5,8 +5,8 @@ export default function Games({ url }) {
     <iframe
       src={url}
       title="Unity WebGL Game"
-      width="800"
-      height="600"
+      width="1400"
+      height="800"
     ></iframe>
   );
 }

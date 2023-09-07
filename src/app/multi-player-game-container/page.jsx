@@ -6,9 +6,7 @@ import Games from "../../component/Games";
 export default function GameContainer() {
   return (
     <AdminLayout>
-      <Center>
-        <Games url="https://play.unity.com/webgl/766b11f9-4a6a-468f-bff3-c57f57de0330" />
-      </Center>
+      <Games url="https://v6p9d9t4.ssl.hwcdn.net/html/8650377/index.html" />
     </AdminLayout>
   );
 }
