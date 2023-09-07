@@ -7,6 +7,7 @@ export default function Games({ url }) {
       title="Unity WebGL Game"
       width="1400"
       height="800"
+      allow="microphone; camera"
     ></iframe>
   );
 }
