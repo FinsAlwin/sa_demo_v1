@@ -12,7 +12,11 @@ import { AiFillAppstore } from "react-icons/ai";
 import NavItem from "./NavItem";
 import { useRouter } from "next/navigation";
 
-const LinkItems = [{ name: "Home", icon: FiHome, link: "/home" }];
+const LinkItems = [
+  { name: "Home", icon: FiHome, link: "/" },
+  { name: "Games", icon: FiHome, link: "/games" },
+  { name: "Demos", icon: FiHome, link: "/demos" },
+];
 
 export default function SidebarContent({ onClose, ...rest }) {
   const router = useRouter();
@@ -36,7 +40,7 @@ export default function SidebarContent({ onClose, ...rest }) {
         <NavItem
           key={link.name}
           icon={link.icon}
-          onClick={() => router.push(`/`)}
+          onClick={() => router.push(`${link.link}`)}
         >
           {link.name}
         </NavItem>

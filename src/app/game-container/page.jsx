@@ -1,14 +1,20 @@
 "use client";
 import { Box, Center } from "@chakra-ui/react";
 import AdminLayout from "../../component/Layout/Admin";
-import Games from "../../component/Games";
+import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
-export default function GameContainer() {
+export default function Page() {
+  const [gameUrl, setGameUrl] = useState("");
+
+  useEffect(() => {
+    const url = Cookies.get("gameUrl");
+    setGameUrl(url);
+  }, [gameUrl]);
+
   return (
     <AdminLayout>
-      <Center>
-        <Games url="https://play.unity.com/webgl/ddd04929-91bf-4261-90b0-de92fcb89e3e" />
-      </Center>
+      <iframe width="100%" height="640" src={gameUrl}></iframe>
     </AdminLayout>
   );
 }
